@@ -12,6 +12,9 @@
   <para>
    &style.oop;
   </para>
+  <simpara>
+   Signature since PHP 8.1.0 (parameters <parameter>dateType</parameter> and <parameter>timeType</parameter> were <emphasis>not optional</emphasis> before)
+  </simpara>
   <methodsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>IntlDateFormatter</type><type>null</type></type><methodname>IntlDateFormatter::create</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter></methodparam>
@@ -24,6 +27,9 @@
   <para>
    &style.oop; (constructor)
   </para>
+  <simpara>
+   Signature since PHP 8.1.0 (parameters <parameter>dateType</parameter> and <parameter>timeType</parameter> were <emphasis>not optional</emphasis> before)
+  </simpara>
   <constructorsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <methodname>IntlDateFormatter::__construct</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter></methodparam>
@@ -36,6 +42,9 @@
   <para>
    &style.procedural;
   </para>
+  <simpara>
+   Signature since PHP 8.1.0 (parameters <parameter>dateType</parameter> and <parameter>timeType</parameter> were <emphasis>not optional</emphasis> before)
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>IntlDateFormatter</type><type>null</type></type><methodname>datefmt_create</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter></methodparam>
@@ -158,6 +167,13 @@
       </row>
      </thead>
      <tbody>
+     <row>
+      <entry>8.1.0</entry>
+      <entry>
+       The parameters <parameter>dateType</parameter> and <parameter>timeType</parameter> are now optional.
+       Default value will be <constant>IntlDateFormatter::FULL</constant> for both of them.
+      </entry>
+     </row>
       <row>
        <entry>5.5.0/PECL 3.0.0</entry>
        <entry>
